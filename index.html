@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+    </style>
 </head>
 <body>
     <h1>Fleet Management app</h1>
@@ -12,8 +15,19 @@
     <input type="password" name="password" id="admin1234">
     <br><br>
 
-<button>Login</button>
-  
+<button ondblclick="login()">Login
+   
+</button>
+
+  <script>
+    function login (){
+        var email = document.getElementById("admin@gmail.com").value;
+        var password = document.getElementById("admin1234").value;
+        if(email == "admin@gmail.com" && password == "admin1234"){
+            window.location.href = "admin.html";
+        }
+    }
+  </script>
 
 </body>
 </html>
